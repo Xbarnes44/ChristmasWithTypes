@@ -11,24 +11,28 @@ namespace ChristmasWithTypes
             var xmasDay = Christmas.Day.Thursday;
 
             //TODO set Santa's name to Kris Kringle
-            xmas.Santa = null;
+            var xmasSanta = "Kris Kringle";
 
             //TODO Insert 3 presents you would like for xmas.  They must be strings
-            xmas.Presents =  new string[3]{ }; 
+            var present = "XBOX,TOYS,BASKETBALL"; 
 
             //TODO Set the TreeHeight to 10
-            xmas.TreeHeight = null;
+           var treeHeight = 10;
 
-            Console.WriteLine($"This year christmas falls on {xmasDay} \n");
-            Console.WriteLine($"Our tree will be {xmas.TreeHeight} feet high \n");
-            Console.WriteLine("Here are the presents we would like:");
+            Console.WriteLine($"This year christmas falls on {xmasDay} ");
+            Console.WriteLine($"Our tree will be {treeHeight} feet high ");
+            Console.WriteLine($"Here are the presents we would like:{present}");
 
-            foreach (var present in xmas.Presents)
+    
+
+            /* foreach (var presents in xmas.Presents)
             {
                 Console.WriteLine($"    {present}");
-            }
+            } */
 
-            Console.WriteLine($"\n We like to call Santa, {xmas.Santa}");
+            Console.WriteLine($" We like to call Santa, {xmasSanta}");
+
+            Console.ReadLine();
         }
     }
 }
